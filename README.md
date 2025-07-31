@@ -1,6 +1,6 @@
 # LeetCodeDaily
 
-Welcome to my daily LeetCode problem-solving repository! This repo documents my journey to improve algorithmic thinking and coding skills by solving one LeetCode problem daily. Solutions are written in **Python** and **Java**, with explanations and complexity analysis for each problem.
+Welcome to my daily LeetCode problem-solving repository! This repo documents my journey to improve algorithmic thinking and coding skills by solving one LeetCode problem daily. Solutions are written in **C++** and **Python**, with explanations and complexity analysis for each problem.
 
 ## Purpose
 - Build a consistent habit of solving coding challenges.

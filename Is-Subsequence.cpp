@@ -6,6 +6,6 @@ public:
             if(s[r] == t[i])
             r++;
         }
-        return (true ? r == s.size() : false);
+        return r == s.size();
     }
 };

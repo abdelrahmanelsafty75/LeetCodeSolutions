@@ -2,14 +2,16 @@ class Solution {
 public:
     int subarraySum(vector<int>& nums, int k) {
     const int n = nums.size();
-    int ans = 0;
-    for(int i=0 ; i < n ;i++){
-        int sum=0;
-        for(int j = i ;j < n ;j++){
-            sum += nums[j];
-            if(sum == k) ans++;
+    int cnt = 0 , sum = 0;
+    unordered_map<int,int>pre;
+    pre[0] = 1;
+    for(int i : nums){
+        sum+=i;
+        int diff = sum - k;
+        if(pre[diff])
+            cnt+=pre[diff];
+        pre[sum]++;
         }
-    } 
-        return ans;
+        return cnt;
     }
 };

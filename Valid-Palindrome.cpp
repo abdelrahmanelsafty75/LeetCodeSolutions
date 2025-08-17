@@ -8,8 +8,13 @@ public:
                 filtered += tolower(c);
             }
         }
-        string reversed = filtered;
-        reverse(reversed.begin(), reversed.end());
-        return (filtered == reversed);
+       int l = 0 ,r = filtered.size()-1;
+       while(l<r){
+        if(filtered[l] != filtered[r])
+        return false;
+        l++;
+        r--;
+       }
+       return true;
     }
 };

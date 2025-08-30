@@ -7,8 +7,7 @@ public:
         }
         ans = sum;
         for(int i = k ;i<nums.size(); i++){
-            sum+= nums[i];
-            sum-=nums[i-k];
+            sum+= nums[i]- nums[i-k];
             ans = max(sum,ans);
         }
         return ans/k;
